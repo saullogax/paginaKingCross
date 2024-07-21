@@ -1,0 +1,91 @@
+<html>
+	<title>Personal Record</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style/style.css" />
+	<link rel="shortcut icon" href="style/logocross.ico" />
+<body>
+	<ul>
+	<img src="header1.png">
+  <li><a href="default.html">Página Principal</a></li>
+  <li><a href="quienessomos.html">¿Quiénes somos?</a></li>
+  <li><a href="pr.html">Personal Record</a></li>
+  <li><a href="habilidades.html">Habilidades</a></li>
+  <li><a href="antesdespues.html">Ántes/Después</a></li>
+  <li><a href="contactanos.html">Contáctanos</a></li>
+    </ul>
+	<div id="habilidades">
+	<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Snatch')" id="defaultOpen">Snatch</button>
+  <button class="tablinks" onclick="openCity(event, 'Clean and Jerk')">Clean and Jerk</button>
+  <button class="tablinks" onclick="openCity(event, 'Clean')">Clean</button>
+  <button class="tablinks" onclick="openCity(event, 'Deadlift')">Deadlift</button>
+  <button class="tablinks" onclick="openCity(event, 'Back Squat')">Back Squat</button>
+  <button class="tablinks" onclick="openCity(event, 'Front Squat')">Front Squat</button>
+  <button class="tablinks" onclick="openCity(event, 'Box Jump')">Box Jump</button>
+   <button class="tablinks" onclick="openCity(event, 'Split Jerk')">Split Jerk</button>
+</div>
+
+<div id="Snatch" class="tabcontent">
+  <h3>Snatch</h3>
+  <p>Esa emoción que sientes al subir tus PRs 🤙🏽😁 @rubenlopesaguilar así festeja sus #205 Lbs de snatch, Tu como festejas tus PRs? 🤙🏽😁</p>
+	<center><video src="pr/chacasnatch.mp4" type=video/mp4 width="300" height="300" preload controls></video></center>
+</div>
+
+<div id="Clean and Jerk" class="tabcontent">
+  <h3>Clean and Jerk</h3>
+  <p>@saullogax poniéndose cada vez más fuerte #LosFuertesConLosFuertes</p> 
+	<center><video src="pr/guillermocleanandjerk.mp4" type=video/mp4 width="300" height="300" preload controls></video></center>
+</div>
+
+<div id="Clean" class="tabcontent">
+  <h3>Clean</h3>
+  <p>No se trata de talento, todos en el más alto nivel de cualquier campo tienen talento. Se trata de compromiso"
+@luispineda15 primer PR del día aumentando a 225Lbs con 2 meses de entrenamiento después de unas largas vacaciones.</p>
+	<center><video src="pr/pinedaclean.mp4" type=video/mp4 width="300" height="300" preload controls></video></center>
+</div>
+<div id="Deadlift" class="tabcontent">
+  <h3>Deadlift</h3>
+  <p>Aldo Javier es el Titán del equipo, aqu� sacando nuevo PR #455 #Deadlift, su PR anterior era de #345 tenía ya un tiempo sin sacarlo, viene de un accidente en motocicleta donde sufrió lesión de hombro y muñecas, aquí lo vemos ya recuperado y más fuerte que antes. Ejemplo de constancia y dedicación!!</p>
+	<center><video src="pr/aldodeadlift.mp4" type=video/mp4 width="300" height="300" preload controls></video></center>
+</div>
+<div id="Back Squat" class="tabcontent">
+  <h3>Back Squat</h3>
+  <p>Así es como se hace 🙌🏽, hoy toco sacar PR de Back Squat felicidades a todos que pudieron aumentar su PR, eso es gracias a su esfuerzo, constancia y disciplina, los que no aumentan es por falta de disciplina no hay otra excusa.</p>
+	<center><video src="pr/yadirabs.mp4" type=video/mp4 width="300" height="300" preload controls></video></center>
+</div>
+<div id="Front Squat" class="tabcontent">
+  <h3>Front Squat</h3>
+  <p>Este talentoso muchacho pudo sacar 195 libras de sentadilla frontal a 3 repeticiones. GRANDIOSO.</p>
+	<center><video src="movimientos/WhatsApp Video 2018-04-02 at 2.07.28 PM.mp4" type=video/mp4 width="300" height="300" preload controls></video></center>
+</div>
+	<div id="Split Jerk" class="tabcontent">
+  <h3>Split Jerk</h3>
+  <p>Antonio, entrenador y atleta logr� 245 libras de Split Jerk, un movimiento que requiere una t�cnica perfecta.</p>
+	<center><video src="movimientos/WhatsApp Video 2018-04-02 at 2.15.16 PM.mp4" type=video/mp4 width="300" height="300" preload controls></video></center>
+</div>
+		<div id="Box Jump" class="tabcontent">
+  <h3>Box Jump</h3>
+  <p>Por favor vean lo que puede hacer con la potencia de sus piernas y la fuerza de cada parte de su cuerpo, esto lo hace volar sobre los cajones el cual salta 1.57 metros de altura casi su propia estatura, dentro de kingscross pasan cosas extraordinarias donde las personas mejoran dia a dia y hacen cosas que lo veian imposible, salir de la rutina, es un momento para ellos mismos donde olvidan todo lo que pasa afuera para enfocarse en cada entrenamiento.</p>
+	<center><video src="pr/boxjump.mp4" type=video/mp4 width="300" height="300" preload controls></video></center>
+</div>
+</div>
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html>
